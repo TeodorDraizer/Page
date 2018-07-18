@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Практика и подражение ♥</title>
+    <link rel="stylesheet" type="text/css" href="https://necolas.github.io/normalize.css/8.0.0/normalize.css">
+    <style type="text/css">
+    @import url('https://fonts.googleapis.com/css?family=Rubik+Mono+One');
+        html{
+            box-sizing: border-box; 
+        }
+        header {
+            background-image: url(../img/header.gif);
+            background-repeat: no-repeat;
+            background-size: 100%;
+            background-position: bottom right;
+            height: 400px;
+        }
+        .gradient-back {
+            background: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0)); 
+             box-sizing: border-box; 
+
+        }
+        .title-back {
+            padding: 210px 600px 0px 0px;
+        } 
+        .title {
+            background-color: rgb(255,255,255,0.2);
+            font-family: monospace;
+            font-size: 50px;
+            color: white;
+            margin: 0px 0px 0px 25px;
+            padding: 10px 15px 10px 15px;
+            border: dashed;
+            color: white;
+        }
+        .tags {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .tags a{
+            background-color: rgb(255,255,255,0.2);
+            font-family: monospace;
+            font-size: 20px;
+            color: white;
+            padding: 10px 15px 10px 10px;
+            border: dashed;
+            color: white;
+            margin: 30px 0px 27px 25px;
+        }
+         .tags a:hover, .tags a:active{
+         	background-color: white;
+         	color: black;
+         }
+    </style>
+</head>
+
+<body>
+    <header> 
+        <div class="gradient-back">  <!-- Нужно придумать способ, как добавить градиент на картинку без создания доп.дива! Кроме того, при разных разрешениях градиент "отлипляется"-->
+        <div class="title-back">
+                <h1 class="title"> Как не надо верстать </h1>
+            </div>
+        <div class="tags">
+            <a href="">#Программирование</a>
+            <a href="">#Верстка</a>
+            <a href="">#JavaScript</a>
+            <a href="">#HTML</a>
+            <a href="">#CSS</a>
+        </div>
+        </div>
+    </header>
+    <section class="basic-sec">
+        <div class="article-basic"></div>
+    </section>
+    <section class="right-panel-sec">
+        <div class="article-right-panel">
+            <p id="footnote">Вот такие сноски вообще не особо клево</p>
+        </div>
+    </section>
+</body>
+
+</html>
