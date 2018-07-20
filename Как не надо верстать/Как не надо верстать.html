@@ -9,18 +9,11 @@
     @import url('https://fonts.googleapis.com/css?family=Rubik+Mono+One');
         html{
             box-sizing: border-box; 
+            -moz-box-sizing: border-box;
         }
         header {
-            background-image: url(../img/header.gif);
-            background-repeat: no-repeat;
-            background-size: 100%;
-            background-position: bottom right;
-            height: 400px;
-        }
-        .gradient-back {
-            background: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0)); 
-             box-sizing: border-box; 
-
+            background: url(../img/header.gif) bottom right/100% no-repeat;
+            box-shadow: inset 0px -50px 200px #000;      
         }
         .title-back {
             padding: 210px 600px 0px 0px;
@@ -53,15 +46,22 @@
          	background-color: white;
          	color: black;
          }
+         aside {
+         	display: flex;
+         	justify-content: flex-end;
+         }
+         .article-rt-panel {
+         	background-color: grey;
+         	margin: 50px 30px 0px 30px;
+         }
     </style>
 </head>
 
 <body>
     <header> 
-        <div class="gradient-back">  <!-- Нужно придумать способ, как добавить градиент на картинку без создания доп.дива! Кроме того, при разных разрешениях градиент "отлипляется"-->
         <div class="title-back">
                 <h1 class="title"> Как не надо верстать </h1>
-            </div>
+         </div>
         <div class="tags">
             <a href="">#Программирование</a>
             <a href="">#Верстка</a>
@@ -69,16 +69,13 @@
             <a href="">#HTML</a>
             <a href="">#CSS</a>
         </div>
-        </div>
     </header>
-    <section class="basic-sec">
+    <article>
         <div class="article-basic"></div>
-    </section>
-    <section class="right-panel-sec">
-        <div class="article-right-panel">
-            <p id="footnote">Вот такие сноски вообще не особо клево</p>
-        </div>
-    </section>
+    </article>
+    <aside>
+            <h3 class="article-rt-panel">Вот такие сноски вообще не особо клево</h3>
+    </aside>
 </body>
 
 </html>
